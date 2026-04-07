@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .features, .testimonials {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            flex: 1;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features, .testimonials {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Startup</h1>
+    <p>Welcome to our product</p>
+</header>
+
+<div class="container">
+
+    <h2>Features</h2>
+    <div class="features">
+        <div class="box">Fast Performance</div>
+        <div class="box">Easy to Use</div>
+        <div class="box">Secure</div>
+    </div>
+
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+        <div class="box">"Great product!"</div>
+        <div class="box">"Amazing experience!"</div>
+        <div class="box">"Loved it!"</div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 My Startup</p>
+</footer>
+
+</body>
+</html>
+
+OUTPUT 
+-----------------------------------
+        My Startup
+   Welcome to our product
+-----------------------------------
+
+Features
+[ Fast Performance ] [ Easy to Use ] [ Secure ]
+
+Testimonials
+[ "Great product!" ] [ "Amazing experience!" ] [ "Loved it!" ]
+
+-----------------------------------
+        © 2026 My Startup
+-----------------------------------
